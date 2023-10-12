@@ -1,5 +1,4 @@
 import useSWR, { SWRConfiguration }  from 'swr';
-import { UserDataMock } from '../_mocks_/LoginForm.mock';
 import { UseData, Response } from '../models/fetcher-model';
 
 
@@ -11,7 +10,7 @@ export const useData = <T,>({key, fetcher} : UseData<T> ) : Response<T> => {
         // revalidateIfStale: false,
         revalidateOnFocus: false,
         revalidateOnReconnect: false,
-        fallbackData: UserDataMock,
+        // fallbackData: UserDataMock,
       };
 
      const { data, error, isValidating  } = useSWR<T, string>(key, fetcher , swrConfig);

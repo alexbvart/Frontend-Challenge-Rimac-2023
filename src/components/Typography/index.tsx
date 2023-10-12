@@ -27,7 +27,7 @@ const TitleContainer: React.FC<HeadingProps> = ({ className, children }) =>
     <h2  className={`${className} text-slate-900 text-2xl font-black`}> {children} </h2>
 
 const SubtitleContainer: React.FC<HeadingProps> = ({ className, children }) => 
-    <h3  className={`${className} text-slate-900 text-xl font-black `}> {children} </h3>
+    <h3  className={`${className} text-slate-900 text-xl font-bold `}> {children} </h3>
 
 export const Base: React.FC<ParagraphProps> = ({ className, children }) => 
     <p  className={`${className} text-slate-900 text text-lg font-normal `}> {children} </p>
@@ -41,7 +41,7 @@ const Xs: React.FC<SpanProps> = ({ className, children }) =>
 
 const Typography = ({ className, children }: TypographyProps) => {
     return (
-        <div className={`${className}`}> 
+        <div className={`${className} flex flex-col gap-2`}> 
             {children}
         </div>
     )

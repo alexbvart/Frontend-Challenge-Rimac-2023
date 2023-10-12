@@ -12,5 +12,7 @@ export const STOLEN_TIREE  :number = 15
 export const RUN_RED_LIGHT :number = 20
 export const RUN_OVER :number = 50
 
-export const URL_PUBLIC_API: string = "https://jsonplaceholder.typicode.com/users/4"
+export const URL_PUBLIC_API_USER: string = "https://rimac-front-end-challenge.netlify.app/api/user.json"
+export const URL_PUBLIC_API_PLAN: string = "https://rimac-front-end-challenge.netlify.app/api/plans.json"
+
 export const ErrorMessage: string = "AxiosError"

@@ -12,9 +12,9 @@ const Button : React.FC<ButtonProps> = ( {isDirty, isValid, children, type, clas
                 fullWidth
                 // disabled={!isDirty || !isValid}
                 {... ( (isDisable) ? { disabled: (isDisable) } : {} )}
-                className={`${className} h-14 ${isDisable ? '' :'bg-primary'} `}
+                className={`${className} rounded-3xl h-14 ${isDisable ? '' :'bg-primary'} `}
             >
-                <p className='text-white text-sm font-medium uppercase'>{children}</p>    
+                <p className='text-white text-sm font-medium uppercase '>{children}</p>    
             </NUXButton>
         </div>
     )

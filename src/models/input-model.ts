@@ -1,8 +1,8 @@
 export type InputsForLogin = {
     dni: string;
     cellPhone: string;
-    licensePlate: string;
     acceptTerms:boolean;
+    acceptPolitic:boolean;
 }
 
 export type InputsForPlan = {

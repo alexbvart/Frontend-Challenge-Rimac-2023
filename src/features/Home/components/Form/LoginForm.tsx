@@ -4,7 +4,7 @@ import { schema } from './schemas/login-form-schema'
 import Input from '../../../../components/Input'
 import Button from '../../../../components/Button'
 import { InputsForLogin } from '../../../../models/input-model'
-import { useUserStore } from '../../../../store/userStore'
+// import { useUserStore } from '../../../../store/userStore'
 import { useNavigate } from "react-router-dom";
 import { PLAN_PATH } from '../../../../routes/routesPath'
 import { Checkbox } from '@nextui-org/react'
@@ -12,8 +12,7 @@ import Typography from '../../../../components/Typography'
 
 export const LoginForm = () => {
 
-    const setDni = useUserStore(state => state.setDni)
-    const setCellPhone = useUserStore(state => state.setCellPhone)
+    // const setCellPhone = useUserStore(state => state.setCellPhone)
     const navigate = useNavigate();
 
     const formMethods  = useForm({
@@ -31,7 +30,7 @@ export const LoginForm = () => {
         register, 
         handleSubmit, 
         // watch, 
-        formState : {isDirty, isValid,errors}, 
+        formState : {isDirty, isValid},//,errors}, 
         reset
     } = formMethods;
 
@@ -39,10 +38,9 @@ export const LoginForm = () => {
     const onSubmit: SubmitHandler<InputsForLogin> = async (data) => {
 
         if (data) {
-            const {dni, cellPhone} = data
+            // const {dni, cellPhone} = data
 
-            dni && setDni(data.dni)
-            cellPhone && setCellPhone(data.cellPhone)
+            // dni && setDni(data.dni)
             
         }
         navigate(PLAN_PATH);
