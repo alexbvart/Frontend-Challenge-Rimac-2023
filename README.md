@@ -1,7 +1,7 @@
 # Hacking-Challenge-Rimac
 Este proyecto es parte de un proceso de seleccion, el reto tecnico es realizado por [Rimac](https://www.rimac.com/) para la posición de Desarrollador Frontend Senior.
 
-![HackingChallengeRimac](./src/assets/mockup.png)
+<!-- ![HackingChallengeRimac](./src/assets/mockup.png) -->
 
 ## Tecnologias
 Este es un proyecto de frontend desarrollado en React que utiliza varias tecnologías y bibliotecas para crear una aplicación web dinámica y moderna. A continuación, se detallan las principales tecnologías y bibliotecas utilizadas en este proyecto:
