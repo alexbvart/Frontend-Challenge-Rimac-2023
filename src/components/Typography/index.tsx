@@ -1,6 +1,13 @@
 import React, { HTMLProps, ReactNode } from 'react';
 
-type TypographyProps = HTMLProps<HTMLDivElement>;
+type directionType = "vertical" | "horizontal";
+
+interface TypographyProps extends HTMLProps<HTMLDivElement>{
+    children?: ReactNode;
+    className?: string;
+    direction?: directionType;
+}
+
 
 interface HeadingProps extends HTMLProps<HTMLHeadingElement> {
     children?: ReactNode;
@@ -39,9 +46,13 @@ const Xs: React.FC<SpanProps> = ({ className, children }) =>
     <span className={`${className} text-slate-950 text-sm font-normal`}> {children} </span>
 
 
-const Typography = ({ className, children }: TypographyProps) => {
+const Typography = ({ className, children, direction = "vertical" }: TypographyProps) => {
+
+
+    const directionStyle =  (direction === "horizontal")  ? "flex flex-row" : " flex flex-col"
+
     return (
-        <div className={`${className} flex flex-col gap-2`}> 
+        <div className={`${className} ${directionStyle} gap-2 `}> 
             {children}
         </div>
     )

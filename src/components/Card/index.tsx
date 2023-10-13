@@ -15,7 +15,7 @@ const CustomCard = ({ isActive = false, onClick, children }: CustomCardProps) =>
             onClick={onClick}
             className={` ${classIsActive} w-full  px-6 py-10 pb-10 bg-white rounded-3xl border-2  
             flex-col justify-start items-end inline-flex
-            px-6 py-10 gap-4`}>
+            gap-4`}>
 
             {children}
 

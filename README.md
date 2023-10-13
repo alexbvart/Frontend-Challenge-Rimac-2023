@@ -45,11 +45,11 @@ Para instalar este proyecto en un entorno local (su computador) abra la `termina
 Para este paso es necesario tener instalado [Git](https://git-scm.com/).
 Clona este repositorio en tu máquina local utilizando el comando:
 ``` shell
-git clone https://github.com/alexbvart/Hacking-Challenge-Rimac.git
+git clone https://github.com/alexbvart/Frontend-Challenge-Rimac-2023
 ```
 Para ingresar a la carpeta de la aplicación usamos:
 ``` shell
-cd hacking-challenge-rimac
+cd Frontend-Challenge-Rimac-2023
 ```
 
 **2. Instalamos las dependencias**\
