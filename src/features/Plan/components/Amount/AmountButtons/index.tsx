@@ -1,6 +1,6 @@
 import {Button, ButtonGroup} from "@nextui-org/react";
 import { MAX_AMOUNT_VEHICLE_PLAN, MIN_AMOUNT_VEHICLE_PLAN } from "../../../../../utilities/constants";
-import { useVehiclePlanStore } from "../../../../../store/vehiclePlan";
+import { useVehiclePlanStore } from "../../../../../store/usePlanStore";
 import { updatePlanAmountType } from "../../../../../models/plan-store-model";
 const AmountButtons = () => {
 

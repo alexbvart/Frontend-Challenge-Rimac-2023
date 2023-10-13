@@ -8,6 +8,7 @@ import { getAge } from "../../../../utilities/getAge";
 import { fetchPlanEndpoint } from "../../services/call-endpoint";
 import Typography from "../../../../components/Typography";
 import { Divider } from "@nextui-org/react";
+import Button from "../../../../components/Button";
 
 
 const PlanListData = () => {
@@ -65,9 +66,10 @@ const PlanListData = () => {
                         <CustomCard.Body>
                             <ul className="list-disc ml-4">
                                 {plan.description.map((description) => 
-                                    <li>{description}</li>
+                                    <li className="pb-2">{description}</li>
                                 )}
                             </ul>
+                            <Button isDirty isValid type="button"> Seleccionar Plan </Button>
                         </CustomCard.Body>
 
                     </CustomCard>

@@ -1,7 +1,7 @@
 import {cleanup,  fireEvent,   render, renderHook, screen, } from '@testing-library/react'
 
 import CoveragesToggles from "../features/Plan/components/CoverageToggles";
-import { useVehiclePlanStore } from '../store/vehiclePlan';
+import { useVehiclePlanStore } from '../store/usePlanStore';
 import { act } from 'react-dom/test-utils';
 import { BASE_COVERAGE, RUN_OVER, STOLEN_TIREE } from '../utilities/constants';
 

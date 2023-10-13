@@ -16,3 +16,10 @@ export interface EndpointPlanModel {
   description: string[];
   age: number;
 }
+
+export enum PlanType {
+  ParaMi,
+  ParaOtros,
+  ParaPadres,
+  ParaMascotas
+}

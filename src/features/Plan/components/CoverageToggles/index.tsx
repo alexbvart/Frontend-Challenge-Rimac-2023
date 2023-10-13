@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import Checkbox from '../../../../components/Input/Checkbox'
-import { useVehiclePlanStore } from '../../../../store/vehiclePlan'
+import { useVehiclePlanStore } from '../../../../store/usePlanStore'
 import { TOGGLE_AMOUNT_RUN_RED_LIGHT } from '../../../../utilities/constants'
 import {Accordion, AccordionItem} from "@nextui-org/react";
 

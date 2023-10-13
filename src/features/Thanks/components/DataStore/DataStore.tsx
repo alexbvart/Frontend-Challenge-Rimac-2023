@@ -1,12 +1,10 @@
-import { useVehiclePlanStore } from '../../../../store/vehiclePlan'
+import { usePlanStore } from '../../../../store/usePlanStore'
 // import { useUserStore } from '../../../../store/userStore'
 import {Code, Button, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure } from '@nextui-org/react'
 import CheckIcon from '../../../../components/Icons/CheckIcon'
 const DataStore = () => {
 
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
-    const amountPlan = useVehiclePlanStore(state=> state.amountPlan)
-    const ammuntCoverage = useVehiclePlanStore(state=> state.ammuntCoverage)
 
     // const dni = useUserStore(state=> state.dni)
     // const cellPhone = useUserStore(state=> state.cellPhone)
@@ -32,16 +30,7 @@ const DataStore = () => {
                     <ModalBody>
                         <p> Los siguientes datos se encuentran en el <Code>Store</Code> :</p>
                         <ul>
-                            <li>
-                                {amountPlan && ( <>
-                                    <CheckIcon/> Monto seleccionado: <Code>{amountPlan}</Code> 
-                                </>) }
-                            </li>
-                            <li>
-                                {ammuntCoverage && ( <>
-                                    <CheckIcon/> Covertura adicional: <Code>{ammuntCoverage}</Code> 
-                                </>) }
-                            </li>
+
                             {/* <li>
                                 {name && ( <>
                                     <CheckIcon/> Nombres: <Code>{name}</Code> 

@@ -1,4 +1,4 @@
-import { useVehiclePlanStore } from '../../../../store/vehiclePlan'
+import { useVehiclePlanStore } from '../../../../store/usePlanStore'
 
 export const Coverage = () => {
     const ammuntCoverage = useVehiclePlanStore( state => state.ammuntCoverage )
