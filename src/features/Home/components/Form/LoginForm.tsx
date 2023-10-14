@@ -9,10 +9,11 @@ import { useNavigate } from "react-router-dom";
 import { PLAN_PATH } from '../../../../routes/routesPath'
 import { Checkbox } from '@nextui-org/react'
 import Typography from '../../../../components/Typography'
+import { useUserStore } from '../../../../store/userStore'
 
 export const LoginForm = () => {
 
-    // const setCellPhone = useUserStore(state => state.setCellPhone)
+    const [setDni,setCellphone] = useUserStore(state => [state.setDni,state.setCellphone])
     const navigate = useNavigate();
 
     const formMethods  = useForm({
@@ -38,9 +39,10 @@ export const LoginForm = () => {
     const onSubmit: SubmitHandler<InputsForLogin> = async (data) => {
 
         if (data) {
-            // const {dni, cellPhone} = data
+            const {dni, cellPhone} = data
 
-            // dni && setDni(data.dni)
+            dni && setDni(data.dni)
+            cellPhone && setCellphone(data.cellPhone)
             
         }
         navigate(PLAN_PATH);

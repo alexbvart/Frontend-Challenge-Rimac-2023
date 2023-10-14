@@ -1,7 +1,6 @@
 import { Divider } from '@nextui-org/react';
 import LinkButton from '../../../../components/LinkButton';
 import { THANKS_PATH } from '../../../../routes/routesPath';
-import { Coverage } from '../CoverageToggles/Coverage';
 import CheckIcon from '../../../../components/Icons/CheckIcon';
 
 export const AmountResumen = () => {
@@ -13,7 +12,6 @@ export const AmountResumen = () => {
                 <div className='flex-xy w-full px-8 py-4 lg:mt-28
                                 lg:flex-col'
                 >
-                    <Coverage/>
 
                     <Divider className="my-4 hidden lg:block" />
                     <div className='hidden pb-8

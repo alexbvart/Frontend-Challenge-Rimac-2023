@@ -13,6 +13,12 @@ export const useUserStore = create<UserStore>((set) => {
 
         name: '',
         setName: (name) => set({ name }),
+
+        dni: '',
+        setDni: (dni) => set({ dni }),
+
+        cellphone: '',
+        setCellphone: (cellphone) => set({ cellphone }),
     };
 });
   

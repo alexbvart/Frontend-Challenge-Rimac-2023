@@ -32,6 +32,7 @@
 
 :root{
   --primary-color:#03050F ;
+  --rimac-color:  #FF1C44;
 }
 
 
@@ -59,6 +60,9 @@
   background: var(--primary-color);
 }
 
+.bg-rimac {
+  background: var(--rimac-color);
+}
 .bg-dg{
   display: flex;
   padding: 0.125rem 0.5rem;

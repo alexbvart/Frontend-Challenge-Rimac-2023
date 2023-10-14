@@ -1,7 +1,5 @@
-import { usePlanStore } from '../../../../store/usePlanStore'
 // import { useUserStore } from '../../../../store/userStore'
 import {Code, Button, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure } from '@nextui-org/react'
-import CheckIcon from '../../../../components/Icons/CheckIcon'
 const DataStore = () => {
 
     const {isOpen, onOpen, onOpenChange} = useDisclosure();

@@ -8,6 +8,12 @@ export interface PlanStore {
     typeSelected: PlanType | number;
     setTypeSelected: (newPlanSelected : PlanType ) => void;
 
+    planName: string;
+    setPlanName: ( newPlanSelected : string ) => void;
+
+    price: number;
+    setPrice: ( price : number ) => void;
+
     // amountPlan: number;
     // updatePlanAmount: (name: updatePlanAmountType) => void;
     // ammuntCoverage: number;

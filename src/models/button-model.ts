@@ -6,6 +6,7 @@ export interface ButtonProps {
     children: React.ReactNode;
     type: TypeButtonInput;
     className?: string;
+    onClick?: () => void;
 }
 export interface LinkButtonProps {
     children: React.ReactNode;
