@@ -17,8 +17,8 @@ const ProcessSteps = () => {
             >
                 {`<`}
             </Button> 
-            <span className='fb-xs'>PASO 2 DE 2</span>
-            <Progress size="md" aria-label="Loading..." value={100} color="danger" isDisabled/>
+            <span className='fb-xs'>PASO 1 DE 2</span>
+            <Progress size="md" aria-label="Loading..." value={50} color="secondary" isDisabled/>
         </header>
   )
 }

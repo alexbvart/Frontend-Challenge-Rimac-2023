@@ -61,17 +61,17 @@ export const LoginForm = () => {
                         
                         <Input name='cellPhone'  label='Celular' required={true} type='number'/>
 
-                        <Checkbox  color="default"    radius="sm" isRequired {...register('acceptTerms')} >
+                        <Checkbox  color="primary"    radius="sm" isRequired {...register('acceptTerms')} >
                             <Typography.Small>Acepto la Política de Privacidad</Typography.Small>
                         </Checkbox>
 
-                        <Checkbox  color="default"  radius="sm" isRequired {...register('acceptPolitic')}>
+                        <Checkbox  color="primary"  radius="sm" isRequired {...register('acceptPolitic')}>
                             <Typography.Small>Acepto la Política Comunicaciones Comerciales</Typography.Small>
                         </Checkbox>
 
                         <Typography.Xs className='underline font-semibold'>Aplican Términos y Condiciones.</Typography.Xs>
 
-                        <Button type="submit" isDirty={isDirty} isValid={isValid} > COTÍZALO </Button>
+                        <Button type="submit" isDirty={isDirty} isValid={isValid} className='rounded-3xl'> COTÍZALO </Button>
 
                     </form>
                 </FormProvider>

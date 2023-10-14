@@ -57,7 +57,7 @@
 
 /* Colors */
 .bg-primary {
-  background: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .bg-rimac {
@@ -72,10 +72,20 @@
   background: var(--gradients-background-aqua-lemon, linear-gradient(86deg, #00F4E2 0%, #00FF7F 100%));
 }
 
+/* Tu archivo de estilos personalizados */
+.bg-secondary {
+  background-color: #4F4FFF !important; /* Cambia el color de fondo a verde */
+}
+
+
+
 .cl-primary {
   color :var(--primary-color);
 }
-
+/* .after\:bg-primary::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--nextui-primary) / var(--nextui-primary-opacity, var(--tw-bg-opacity))); */
 
 /* Background images */
 
@@ -128,17 +138,32 @@ div[data-slot="base"] > div > button[data-slot="tab"] > span[data-slot="cursor"]
   background: var(--primary-color);
 }
 
+/* checkbox */
 
-input[type='checkbox']:checked+label:before {
-  background-color: #03050F;
-  border-color: #92d66f;
-  color: #fff;
-  font-size: 8px;
-  text-align: center;
-  background-size: 70%;
-  background-position: center center;
-  background-repeat: no-repeat;
+/* succes check */
+.after\:bg-success::after {
+  background-color: #389E0D !important;
 }
+.after\:text-success-foreground {
+  color: white !important;
+  border-radius: 50%;
+}
+
+
+/* .after\:bg-default::after {
+  color: white !important;
+  background-color: var(--primary-color) !important;
+} */
+
+/* primary check */
+.after\:bg-primary::after {
+  background-color: var(--primary-color) !important;
+}
+.after\:text-primary-foreground {
+  color: white !important;
+}
+
+
 .min-h-40{
   height: 60rem;
 }

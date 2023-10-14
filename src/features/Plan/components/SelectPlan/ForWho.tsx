@@ -2,6 +2,7 @@ import CustomCard from '../../../../components/Card'
 import Typography from '../../../../components/Typography';
 import { plans } from '../../Data/plansData';
 import { usePlanStore } from '../../../../store/usePlanStore';
+import { Checkbox } from '@nextui-org/react';
 
 const ForWho = () => {
 
@@ -23,9 +24,10 @@ const ForWho = () => {
                     isActive={typeSelected === plan.type}
                     onClick={() => handleCardClick(plan.type)}
                 >
-                    <CustomCard.Header>
+                    <CustomCard.Header className='relative'>
+                        <Checkbox className=' absolute right-0' color='success' isSelected={typeSelected === plan.type}/>
                         <Typography>
-                            <Typography.SubtitleContainer className='flex flex-col md:flex-row gap-4 '>
+                            <Typography.SubtitleContainer className='flex flex-row  md:flex-col gap-4 '>
                                 <div className="w-12 h-12 relative bg-slate-200" />
                                 {plan.title}
                             </Typography.SubtitleContainer>
