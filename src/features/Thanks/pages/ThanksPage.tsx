@@ -28,7 +28,7 @@ export const ThanksPage = () => {
                         </Typography>
                     </CustomCard.Header>
                     <Divider/>
-                    <CustomCard.Body>
+                    <CustomCard.Body className='flex flex-col gap-4'>
                         <Typography>
                             <Typography.Base>Responsable de pago</Typography.Base>
                             <Typography.Small>

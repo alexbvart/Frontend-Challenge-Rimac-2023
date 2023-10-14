@@ -41,6 +41,7 @@
 .body-layout{
   position: relative;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 .max-w-screen{
     /* max-width: 1200px; */
