@@ -3,16 +3,11 @@ import CustomCard from '../../../components/Card';
 import CheckIcon from '../../../components/Icons/CheckIcon';
 import { Divider } from '@nextui-org/react';
 import Typography from '../../../components/Typography';
-import { useUserStore } from '../../../store/userStore';
-import { usePlanStore } from '../../../store/usePlanStore';
+import useResume from '../hooks/useResume';
 
 export const ThanksPage = () => {
 
-    // const mailing = useUserStore(state=> state.mailing)
-    const [userName, lastName] = useUserStore( state => [state.name, state.lastName])
-    const [dni, cellphone] = useUserStore( state => [state.dni, state.cellphone])
-    const [planName, price] = usePlanStore( state => [state.planName, state.price])
-
+    const {userName, lastName, dni, cellphone, planName, price} = useResume()
 
     return (
         <>  

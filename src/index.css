@@ -208,3 +208,49 @@ div[data-slot="base"] > div > button[data-slot="tab"] > span[data-slot="cursor"]
   grid-area: form;
   /* Estilos del formulario */
 }
+
+
+/* scroll */
+
+.scroll-touch {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  cursor: grab;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.scroll-touch:active {
+  cursor: grab;
+}
+
+.scroll-horizontal {
+  scroll-behavior: smooth;
+  touch-action: pan-x;
+  overflow: hidden;
+  width: 100%;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  user-select: none;
+}
+
+
+.scroll-horizontal::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.scroll-horizontal::-webkit-scrollbar-thumb {
+  width: 10px;
+  height: 10px;
+  background-color: #cfcdff84;
+}

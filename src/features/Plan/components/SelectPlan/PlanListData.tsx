@@ -34,7 +34,7 @@ const PlanListData = () => {
     // if (!error && !isLoading && data) {
     //     const { name, email } = data;
     // }
-
+    
     const [activeCard, setActiveCard] = useState<number>(0);
 
     const handleCardClick = (cardIndex: number, name: string, price: number) => {
@@ -45,7 +45,9 @@ const PlanListData = () => {
     };
 
     return (
-        <div className={`${isLoading && "animate-pulse rounded-lg inline-block "} flex gap-4`}>
+        <div className="scroll-touch">
+
+        <div className={`${isLoading && "animate-pulse rounded-lg inline-block "} flex gap-4 scroll-horizontal`}>
             {data &&
                 data
                 .filter((plan) =>  plan.age >= UserAge)
@@ -94,6 +96,7 @@ const PlanListData = () => {
 
                 ))
             }
+        </div>
         </div>
     )
 }

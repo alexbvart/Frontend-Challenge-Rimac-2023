@@ -1,5 +1,5 @@
 import { Divider } from '@nextui-org/react'
-import AmountButtons from './AmountButtons'
+// import AmountButtons from './AmountButtons'
 
 const AmountSection = () => {
   return (
@@ -15,7 +15,7 @@ const AmountSection = () => {
             </div>
         </header>
         <div>
-            <AmountButtons/>
+            {/* <AmountButtons/> */}
         </div>
     </section>
   )
