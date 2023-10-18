@@ -1,5 +1,5 @@
 # Hacking-Challenge-Rimac
-Este proyecto es parte de un proceso de seleccion, el reto tecnico es realizado por [Rimac](https://www.rimac.com/) para la posición de Desarrollador Frontend Senior.
+Este proyecto es parte de un proceso de seleccion, el reto tecnico es realizado por [Rimac](https://www.rimac.com/).
 
 ![HackingChallengeRimac](./src/assets/mockup.png)
 
